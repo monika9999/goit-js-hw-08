@@ -1,5 +1,4 @@
 import Player from '@vimeo/player';
-import { throttle } from 'lodash';
 
 const videoEl = document.querySelector('#vimeo-player');
 const newPlayer = new Player(videoEl);
