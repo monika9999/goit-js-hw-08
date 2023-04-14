@@ -2,7 +2,7 @@ import Player from '@vimeo/player';
 import throttle from 'lodash.throttle';
 
 const videoEl = document.querySelector('#vimeo-player');
-const newPlayer = new Player(videoEl);
+const newplayer = new Player(videoEl);
 const STORAGE_KEY = 'videoplayer-current-time';
 
 const saveTime = throttle(
@@ -10,5 +10,5 @@ const saveTime = throttle(
   1000
 );
 
-player.setCurrentTime(localStorage.getItem(STORAGE_KEY)).then();
-player.on('timeupdate', savePlayerTime);
+newplayer.setCurrentTime(localStorage.getItem(STORAGE_KEY)).then();
+newplayer.on('timeupdate', saveTime);
