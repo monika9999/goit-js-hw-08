@@ -39,3 +39,9 @@ galleryEl.addEventListener('click', event => {
   );
   instance.show();
 });
+
+new SimpleLightbox('.gallery a', {
+  captions: true,
+  captionsData: 'alt',
+  captionDelay: 250,
+});
